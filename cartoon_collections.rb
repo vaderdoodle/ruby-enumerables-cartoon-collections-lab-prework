@@ -1,9 +1,15 @@
-def roll_call_dwarves# code an argument here
-  # Your code here
+def roll_call_dwarves(array)
+  array.each_with_index do |el, i|
+    puts "#{i+1} #{el}"
+  end
 end
 
-def summon_captain_planet# code an argument here
-  # Your code here
+def summon_captain_planet (array)
+  new_array = []
+  array.map do |el|
+    new_array.push("#{el.capitalize}!")
+  end
+  return new_array
 end
 
 def long_planeteer_calls# code an argument here
