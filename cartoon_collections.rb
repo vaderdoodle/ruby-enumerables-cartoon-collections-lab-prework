@@ -17,7 +17,13 @@ def long_planeteer_calls(calls)
 end
 
 def find_the_cheese(strings)
-  # the array below is here to help
   cheese_types = ["cheddar", "gouda", "camembert"]
-  strings.any
+  i = 0
+  while i < cheese_types.length do
+   if strings.include?(cheese_types[i])
+    return cheese_types[i]
+   else
+    return nil 
+   end
+  end
 end
