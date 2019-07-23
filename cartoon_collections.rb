@@ -23,7 +23,8 @@ def find_the_cheese(strings)
    if strings.include?(cheese_types[i])
     return cheese_types[i]
    else
-    return nil 
+    i += 1 
    end
   end
+  return nil 
 end
